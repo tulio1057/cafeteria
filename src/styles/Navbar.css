@@ -16,9 +16,9 @@
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -31,6 +31,24 @@
 .nav-links a:hover {
   color: #f0b27a;
 }
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; /* Inverte a ordem dos elementos */
+  gap: 10px; /* Espaço entre o link e o ícone */
+}
+
+.nav-action {
+  margin-right: 15px; /* Ajusta o espaço entre o ícone e o link */
+}
+
 .logo-img {
   height: 50px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

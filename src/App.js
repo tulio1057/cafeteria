@@ -3,8 +3,8 @@ import Home from "./components/home";
 import Sobre from "./components/sobre";
 import Contato from "./components/contato";
 import Navbar from "./components/navbar";
-import "./App.css";
-import RedeSociais from "./components/rede";
+import './styles/App.css';
+
 
 function App() {
   return (

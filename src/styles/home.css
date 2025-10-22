@@ -12,7 +12,3 @@
     color: #333;
   
 }
-.conteudo::before {
-       content: "↓";
-       font-size: 1em;
-}
