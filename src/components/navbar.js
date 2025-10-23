@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import '../styles/Navbar.css';
-import logo from "../assets/Logo.png"
-import Button from './Button';
+import "../styles/Navbar.css";
+import logo from "../assets/Logo.png";
+import Button from "./Button";
 
 function Navbar() {
   return (
@@ -18,8 +18,15 @@ function Navbar() {
             <Button />
           </div>
         </li>
-        <li><Link to="/sobre">Sobre</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
+        <li>
+          <Link to="/menu">Cardápio</Link>
+        </li>
+        <li>
+          <Link to="/sobre">Sobre</Link>
+        </li>
+        <li>
+          <Link to="/contato">Contato</Link>
+        </li>
       </ul>
     </nav>
   );
