@@ -4,6 +4,7 @@ import Sobre from "./components/sobre";
 import Contato from "./components/contato";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
 import "./styles/App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contato" element={<Contato />} />
         </Routes>
       </Router>
+      <Menu />
       <Footer />
     </div>
   );
