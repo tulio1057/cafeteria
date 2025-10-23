@@ -1,0 +1,40 @@
+
+.card-produto {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 15px;
+  width: 180px; /* Uma largura um pouco maior para o destaque */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-produto:hover {
+  transform: translateY(-8px); /* Efeito de "flutuar" mais pronunciado */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-imagem {
+  width: 100%;
+  height: 150px; /* Altura fixa para manter o alinhamento */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+.card-nome {
+  font-size: 16px;
+  font-weight: 600; /* Um pouco mais de peso na fonte */
+  color: #4A4A4A; /* Cor de texto escura, mas não preto puro */
+  margin: 0 0 5px 0;
+}
+
+.card-preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e86a8b; /* O rosa característico da identidade visual */
+  margin: 0;
+}

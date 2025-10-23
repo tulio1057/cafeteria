@@ -1,0 +1,25 @@
+.contato-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.contato-container h1 {
+    color: #333333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contato-container p {
+    color: #555555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .contato-container {
+        margin: 30px auto;
+    }
+}
