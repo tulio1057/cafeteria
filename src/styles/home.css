@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+.caixa{
+    background-color: #f5f5dc; /* cor bege clara para o fundo */
+    margin: 0;
+    padding: 0;
+}
 .topo h1{
     margin-top: 20px;
     text-align: center;
@@ -5,10 +12,23 @@
     place-items: center;
     height: 75vh;
     color: #4a2c2a; /* cor marrom para o título */
+
+    /* alterações: fonte maior, mais para baixo e Moramit */
+    font-family: 'Merriweather', "Segoe UI", Tahoma, sans-serif;
+    font-size: 3.2rem; /* aumenta o tamanho da frase */
+    font-weight: 700;
+    margin-top: 0; /* padding-top substitui o margin-top para posicionamento vertical */
+    text-shadow: 0 2px 0 rgba(0,0,0,0.15);
 }
-.conteudo {
+.conteudo  {
+    font-family: 'Merriweather', "Segoe UI", Tahoma, sans-serif;
     text-align: center;
-    margin: 20px;
-    color: #333;
-  
+    display: grid;
+    padding-top: 140px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    margin-top: 80px;
+    background-color: #4a2c2a;
+    height: 80vh;
 }
