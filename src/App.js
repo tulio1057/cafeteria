@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify"; // <-- Importação do ToastContainer
 import "react-toastify/dist/ReactToastify.css"; // <-- Importação dos estilos CSS
@@ -6,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css"; // <-- Importação dos estilos 
 import Home from "./components/Home";
 import Sobre from "./components/Sobre";
 import Contato from "./components/Contato";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Localizaçao from "./components/Localizacao";
