@@ -13,11 +13,11 @@ export default function Footer() {
           <a href="/">Início</a>
           <a href="/sobre">Sobre</a>
           <a href="/contato">Contato</a>
-          <a href="/cardapio">Cardápio</a>
+          <a href="/menu">Cardápio</a>
         </nav>
         <div className="footer-contact">
-          <p>Email: contato@cafeteria.com</p>
-          <p>Tel: (00) 0000-0000</p>
+          <p>Email: jejejessicamaria@gmailcom</p>
+          <p>Tel: (79) 98126-7894</p>
         </div>
       </div>
       <div className="footer-bottom">

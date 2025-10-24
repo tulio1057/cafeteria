@@ -2,12 +2,14 @@
     /* Padding e margem para separar o mapa do conteúdo ao redor */
     padding: 30px 20px;
     margin: 40px 0;
+    margin-top: -40px;
     
     /* Um fundo sutil para destacá-lo */
     background-color: #f8f8f8;
     border-radius: 8px; /* Cantos arredondados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
 
 .mapa-container h2 {
     text-align: center;
@@ -28,12 +30,13 @@
     border-radius: 6px;
     overflow: hidden; /* Garante que o mapa não saia do contêiner */
 }
-.localizacao-page h1 {
-    font-size: 2.5em;
-    color: #444;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.localizacao-page img {
+  width: 400px; /* Exemplo: Defina a largura fixa desejada */
+  height: auto; /* Mantém a proporção da imagem */
+  /* Se quiser uma altura fixa, use: height: 150px; e adicione object-fit: cover; para evitar distorção */
+  display: block;
+   margin: 0 auto;
+
 }
 /* Para garantir que seja responsivo em telas pequenas */
 @media (max-width: 768px) {

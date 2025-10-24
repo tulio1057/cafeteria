@@ -1,10 +1,11 @@
 import Localizacao from "../api/Mapa";
 import "../styles/Local.css";
+import Loc from "../assets/localizacao.webp"
 
 function Mapa() {
   return (
     <div className="localizacao-page">
-      <h1>Nossa Localização</h1>
+       <img src={Loc} alt="localizacao"/>
       <div className="mapa-container">
         <Localizacao />
       </div>

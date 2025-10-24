@@ -7,9 +7,17 @@
 
 /* --- Seção de Título Principal (Sobre a Miuteria) --- */
 .sobre-header {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
+/* Seleciona a imagem dentro da div com a classe 'tamanho' */
+.tamanho img {
+  width: 400px; /* Exemplo: Defina a largura fixa desejada */
+  height: auto; /* Mantém a proporção da imagem */
+  /* Se quiser uma altura fixa, use: height: 150px; e adicione object-fit: cover; para evitar distorção */
+  display: block;
+ margin: 0 auto;
 
+}
 .sobre-header h1 {
     color: #9B766D; /* Cor de destaque */
     font-size: 2.2rem;

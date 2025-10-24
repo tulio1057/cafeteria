@@ -2,6 +2,8 @@ import CafeCupSplash from "../assets/cafe.png";
 import GuiaTitulo from "../assets/titulo-cafe.png";
 import "../styles/Cafe.css";
 
+
+
 function Cafe() {
   return (
     <div className="cafe-container">
@@ -21,7 +23,6 @@ function Cafe() {
         />
         <p className="cafe-paragraph">
           Bem-vindo(a) à Miauteria! Criamos este guia com dicas para uma
-          <br />
           experiência incrível para você, segura e feliz para nossos gatinhos.
         </p>
       </div>

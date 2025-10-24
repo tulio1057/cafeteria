@@ -1,13 +1,15 @@
 .cafe-container {
-  background-color: #54402f;
-  width: 100%;
+  background-image: url("../assets/fundo-cafe.png ");
+  width: 120vh;
   height: 350px;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
   margin-top: 80px;
+  left: 42vh;
   z-index: 10;
+  border-radius: 25px;
 }
 
 .cafe-arc {
@@ -58,7 +60,7 @@
 .cafe-paragraph {
   color: #ffffff;
   font-size: 1.1em;
-  margin-top: 0;
+  margin-top: -15px;
   font-family: "Lexend", sans-serif;
 }
 
