@@ -1,12 +1,11 @@
+// src/data/menuData.js
+
+// 1. Dados de Cafés Quentes
 export const cafesQuentes = [
-  {
-    nome: "ESPRESSO",
-    descricao: "Café espresso (30ml).",
-    preco: "R$ 7,00",
-  },
+  { nome: "ESPRESSO", descricao: "Café expresso (30ml).", preco: "R$ 7,00" },
   {
     nome: "CARIOCA",
-    descricao: "Café espresso (30ml), completado com água quente (150ml).",
+    descricao: "Café expresso (30ml), completado com água quente (150ml).",
     preco: "R$ 7,00",
   },
   {
@@ -21,7 +20,7 @@ export const cafesQuentes = [
   },
   {
     nome: "DULCE MACCHIATO",
-    descricao: "Espresso completado com crema do leite e doce de leite (80ml).",
+    descricao: "Espresso completado com crema de leite e doce de leite (80ml).",
     preco: "R$ 11,00",
   },
   {
@@ -31,11 +30,12 @@ export const cafesQuentes = [
   },
 ];
 
+// 2. Dados de Cafés Gelados
 export const cafesGelados = [
   {
     nome: "MOCHA GELADO",
     descricao: "Sorvete de creme, ovomaltine, espresso e chantilly (300ml).",
-    preco: "R$ 25,00",
+    preco: "R$ 26,00",
   },
   {
     nome: "AFFOGATO",
@@ -43,23 +43,23 @@ export const cafesGelados = [
     preco: "R$ 23,00",
   },
   {
-    nome: "COLDBREW",
+    nome: "COLD BREW",
     descricao: "Café gelado infusionado por 24h (200ml).",
     preco: "R$ 20,00",
   },
   {
-    nome: "COLDBREW TANGERINA",
+    nome: "COLD BREW TANGERINA",
     descricao: "Café gelado com xarope de tangerina e hortelã (300ml).",
-    preco: "R$ 25,00",
+    preco: "R$ 23,00",
   },
 ];
 
-// Adicionando uma nova seção para melhor UX
+// 3. Dados de Doces
 export const doces = [
   {
     nome: "BOLO DE CENOURA",
     descricao: "Fatia generosa com cobertura de brigadeiro cremoso.",
-    preco: "R$ 15,00",
+    preco: "R$ 11,00",
   },
   {
     nome: "BROWNIE DE CHOCOLATE",
@@ -73,17 +73,21 @@ export const doces = [
   },
 ];
 
+// 4. O ARRAY PRINCIPAL menuSections (CORREÇÃO DE ESTRUTURA)
 export const menuSections = [
   {
+    id: "quentes",
     title: "Cafés Quentes",
     data: cafesQuentes,
   },
   {
+    id: "gelados",
     title: "Cafés Gelados",
     data: cafesGelados,
   },
   {
-    title: "Doces & Sobremesas",
-    data: doces,
+    id: "doces",
+    title: "Doces",
+    data: doces, // Garante que a seção de doces também tenha a propriedade 'data'.
   },
 ];

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Corrigido para minúsculas para corresponder ao disco do usuário
-import Home from "./components/home";
-import Sobre from "./components/sobre";
-import Contato from "./components/contato";
-import Navbar from "./components/navbar";
+// Corrigido para capitalização correta (PascalCase) após renomeação dos arquivos
+import Home from "./components/Home";
+import Sobre from "./components/Sobre";
+import Contato from "./components/Contato";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 

@@ -4,10 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#C49B7A;
+  background-color:#54402f;
   padding: 15px 40px;
   color: #fff;
-  font-family: 'Moramit', sans-serif;
+  font-family: 'Georgia', sans-serif;
 }
 
 .logo {

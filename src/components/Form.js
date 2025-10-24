@@ -14,13 +14,12 @@ const Formulario = ({ onSubmitForm }) => {
 
   // Função que será chamada após a validação do formulário
   const onSubmit = async (data) => {
-    try {
-      // Chama a função de submissão (handleSubmit) que veio do componente pai (contato.js)
-      await onSubmitForm(data);
-      reset(); // Limpa o formulário após o sucesso
-    } catch (error) {
-      alert("Erro ao enviar mensagem.");
-      console.error("Erro ao enviar formulário:", error);
+    // Chama a função de submissão (handleSubmit) que veio do componente pai (contato.js)
+    // E espera um resultado booleano (true para sucesso, false para falha)
+    const success = await onSubmitForm(data);
+
+    if (success) {
+      reset(); // Limpa o formulário APENAS se o envio for bem-sucedido
     }
   };
 

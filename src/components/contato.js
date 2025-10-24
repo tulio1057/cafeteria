@@ -1,31 +1,42 @@
 import React from "react";
-import Formulario from "./Form.js"; // Assumindo que Form.js exporta o componente
+import Formulario from "./Form.js";
 import "../styles/Forms.css";
-import "../styles/contato.css"; // Importa o CSS da página de Contato
+import "../styles/contato.css";
+import axios from "axios";
 
-const ContactPage = () => {
-  // Lógica de submissão (mantida do seu original)
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mrgwlllo";
+
+const Contato = () => {
   const handleSubmit = async (data) => {
     try {
-      // Aqui você adicionará a lógica para enviar os dados para o banco
-      console.log("Dados do formulário:", data);
-      alert("Mensagem enviada com sucesso!");
+      const response = await axios.post(FORMSPREE_ENDPOINT, data);
+
+      if (response.status === 200) {
+        console.log("Dados do formulário enviados:", data);
+        alert("Mensagem enviada com sucesso! Em breve entraremos em contato.");
+        return true;
+      } else {
+        throw new Error("Falha no envio da mensagem.");
+      }
     } catch (error) {
-      console.error(error);
-      alert("Erro ao enviar mensagem!");
+      console.error("Erro ao enviar formulário:", error);
+      alert("Erro ao enviar mensagem! Por favor, tente novamente mais tarde.");
+      return false;
     }
   };
 
   return (
-    // Aplicando a classe 'contato-container'
     <div className="contato-container">
       <h1>Entre em Contato</h1>
-      <p>Preencha o formulário abaixo para nos enviar uma mensagem.</p>
+      <p>
+        Preencha o formulário abaixo para nos enviar uma mensagem.
+        <br />
+        Responderemos o mais breve possível!
+      </p>
 
-      {/* Passando a função de submissão como propriedade (onSubmit) para o Formulario */}
       <Formulario onSubmitForm={handleSubmit} />
     </div>
   );
 };
 
-export default ContactPage;
+export default Contato;

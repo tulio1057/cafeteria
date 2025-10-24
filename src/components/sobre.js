@@ -2,17 +2,8 @@ import React from "react";
 import Galeria from "./Galeria";
 import "../styles/sobre.css";
 
-// Dados de exemplo dos gatinhos (ajuste conforme necessário)
-const gatinhos = [
-  { nome: "Mimi", foto: "caminho/para/mimi.jpg" }, // Use os caminhos reais das suas imagens
-  { nome: "Tobias", foto: "caminho/para/tobias.jpg" },
-  { nome: "Luna", foto: "caminho/para/luna.jpg" },
-  { nome: "Chico", foto: "caminho/para/chico.jpg" },
-  { nome: "Mel", foto: "caminho/para/mel.jpg" },
-  { nome: "Flora", foto: "caminho/para/flora.jpg" },
-  { nome: "Nino", foto: "caminho/para/nino.jpg" },
-  { nome: "Pinto", foto: "caminho/para/pinto.jpg" },
-];
+// A lista estática de gatinhos foi removida, pois o componente Galeria
+// já carrega dados dinamicamente da The Cat API.
 
 function Sobre() {
   return (
@@ -28,7 +19,8 @@ function Sobre() {
         </p>
       </header>
 
-      <Galeria gatinhos={gatinhos} />
+      {/* O componente Galeria agora é responsável por carregar e exibir as imagens */}
+      <Galeria />
     </main>
   );
 }
