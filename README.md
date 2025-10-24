@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+☕ Cafeteria - Projeto Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visão Geral do Projeto
 
-## Available Scripts
+Este projeto é uma aplicação web moderna, desenvolvida com React, que simula o site de uma cafeteria. O objetivo principal é apresentar o cardápio, a história da cafeteria, informações de contato e a localização física, utilizando tecnologias atuais de desenvolvimento front-end.
 
-In the project directory, you can run:
+O projeto foi inicializado com Create React App e utiliza uma arquitetura baseada em componentes, garantindo modularidade e fácil manutenção.
 
-### `npm start`
+🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto foi construído utilizando as seguintes tecnologias e bibliotecas principais:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Categoria
+Tecnologia
+Versão
+Descrição
+Framework
+React
+19.2.0
+Biblioteca JavaScript para construção de interfaces de usuário.
+Roteamento
+React Router DOM
+7.9.4
+Gerenciamento de navegação e rotas da aplicação.
+Estilização
+Styled Components
+6.1.19
+Estilização de componentes com CSS-in-JS.
+Mapas
+React Leaflet / Leaflet
+5.0.0 / 1.9.4
+Exibição de mapas interativos para a localização da cafeteria.
+Formulárioss
+React Hook Form
+7.65.0
+Gerenciamento e validação de formulários de forma eficiente.
+Notificações
+React Toastify
+11.0.5
+Exibição de notificações (toasts) para feedback ao usuário.
+Requisições HTTP
+Axios
+1.12.2
+Cliente HTTP baseado em Promises para fazer requisições a APIs.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 Funcionalidades
 
-### `npm run build`
+O site da cafeteria oferece as seguintes seções e funcionalidades:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Rota
+Componente Principal
+Descrição
+/
+Home.js
+Página inicial com destaque para a cafeteria.
+/menu
+Menu.js
+Apresentação do cardápio completo, carregado a partir de src/data/menuData.js.
+/sobre
+Sobre.js
+História e informações sobre a cafeteria.
+/contato
+Contato.js
+Formulário de contato para comunicação com a cafeteria.
+/localizacao
+Localizacao.js
+Mapa interativo (utilizando Leaflet) mostrando a localização física.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+⚙️ Instalação e Execução
 
-### `npm run eject`
+Para configurar e rodar o projeto em seu ambiente local, siga os passos abaixo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Pré-requisitos
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Certifique-se de ter o Node.js e o npm (ou Yarn) instalados em sua máquina.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clonar o Repositório
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Bash
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/tulio1057/cafeteria.git
+cd cafeteria
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+2. Instalar as Dependências
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Instale todas as dependências do projeto listadas no package.json:
 
-### Analyzing the Bundle Size
+Bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+npm install
+# ou
+yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+3. Executar o Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Inicie a aplicação em modo de desenvolvimento. Ela será executada em http://localhost:3000.
 
-### Deployment
+Bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+npm start
+# ou
+yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+O navegador abrirá automaticamente a página, e a aplicação será recarregada sempre que você fizer alterações nos arquivos fonte.
+
+4. Construir para Produção
+
+Para criar uma versão otimizada do projeto para deploy (produção):
+
+Bash
+
+
+npm run build
+# ou
+yarn build
+
+
+Os arquivos de produção serão gerados na pasta build/.
+
+🤝 Contribuição
+
+Contribuições são bem-vindas! Se você deseja melhorar o projeto, siga estas etapas:
+
+1.
+Faça um fork do projeto.
+
+2.
+Crie uma branch para sua funcionalidade (git checkout -b feature/nova-funcionalidade).
+
+3.
+Faça o commit de suas alterações (git commit -m 'feat: Adiciona nova funcionalidade X').
+
+4.
+Faça o push para a branch (git push origin feature/nova-funcionalidade).
+
+5.
+Abra um Pull Request detalhado.
+
+📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE (se existir) para mais detalhes.
+
+📧 Contato
+
+•
+Autor: Tulio1057
+
+•
+Link do Repositório: https://github.com/tulio1057/cafeteria
+
