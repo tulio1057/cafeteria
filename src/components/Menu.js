@@ -6,7 +6,7 @@ import "./../styles/Menu.css";
 
 const handleMenuDigitalClick = () => {
   window.open(
-    "https://drive.google.com/file/d/1_VkHjWMsT5KdEPCS7Qzdu6bwPoneClzv/view?usp=sharing",
+    "https://l.instagram.com/?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1_YR0UMe1Tsk4EPC57p6u68wufhmeClzV%2Fview%3Fusp%3Dsharing%26fbclid%3DPAZXh0bgNhZW0CMTEAAafvanum1Fefzo0D8gnmYfUTQR4V7WYRNa2jwuyIUtLTDpe8cbHh7UG0OLil2g_aem_iqYa5DzFdQ9iLcQkmwLMIg&e=AT3Jp91ehR2-THRYKthaUzEG_jCVuu-XpOfnkY9EwHtG30XSsj513BWRLEP7nqXQr5adMy5S3FkqZkQO6j67k76bS83lDPIuAE1Y-uQDiQ",
     "_blank",
     "noopener,noreferrer"
   );
