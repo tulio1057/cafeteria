@@ -17,7 +17,7 @@ L.Icon.Default.mergeOptions({
 });
 
 // 1. Defina as coordenadas do local
-const localizacao = [-10.973378066518874, -37.037266732211215]; // [Latitude, Longitude] - Exemplo: São Paulo
+const localizacao = [-10.923210594237144, -37.06710499898084]; // [Latitude, Longitude] - Exemplo: São Paulo
 
 function OSMMapComponent() {
   return (

@@ -64,3 +64,27 @@
     margin-top: 10px;
   }
 }
+
+/* Media Query para Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .nav-links {
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}

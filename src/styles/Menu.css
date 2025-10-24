@@ -155,3 +155,67 @@ body {
     background-color: #A38A75; /* Marrom um pouco mais escuro no hover */
     transform: translateY(-2px);
 }
+
+/* --- Responsividade --- */
+
+/* Media Query para Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 20px 10px 60px 10px;
+    }
+
+    .titulo-cardapio-container {
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto 20px auto;
+    }
+
+    .coffee-grid {
+        grid-template-columns: 1fr; /* Uma coluna para tablets */
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .card-title {
+        font-size: 1.5em;
+    }
+
+    .pdf-btn {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+}
+
+/* Media Query para Smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+    .menu-container {
+        padding: 15px 5px 40px 5px;
+    }
+
+    .titulo-cardapio-container {
+        width: 100%;
+        padding: 15px;
+        margin: 20px auto 15px auto;
+    }
+
+    .titulo-cardapio-imagem {
+        max-width: 250px;
+    }
+
+    .coffee-grid {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .card-title {
+        font-size: 1.3em;
+    }
+
+    .item-name, .item-price {
+        font-size: 1em;
+    }
+
+    .item-desc {
+        font-size: 0.8em;
+    }
+}
