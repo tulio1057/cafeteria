@@ -68,28 +68,6 @@
     line-height: 1.5;
 }
 
-
-@keyframes patinha-caminhando {
-  0% {
-    transform: translateX(-10vw) rotate(0deg); 
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.5; 
-  }
-  100% {
-    transform: translateX(110vw) rotate(360deg); 
-    opacity: 0.2;
-  }
-}
-
-.patinha-animada {
-  animation-name: patinha-caminhando;
-  animation-iteration-count: infinite; 
-  animation-timing-function: linear; 
-  animation-duration: var(--animation-duration); 
-}
-
 /* --- Responsividade --- */
 @media (max-width: 768px) {
     .home-header h1 {
