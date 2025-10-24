@@ -68,35 +68,28 @@
     line-height: 1.5;
 }
 
+
 @keyframes patinha-caminhando {
   0% {
-    transform: translateX(-10vw) rotate(0deg);
+    transform: translateX(-10vw) rotate(0deg); 
     opacity: 0.2;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.5; 
   }
   100% {
-    transform: translateX(110vw) rotate(360deg); /* Termina à direita e gira */
+    transform: translateX(110vw) rotate(360deg); 
     opacity: 0.2;
   }
 }
 
 .patinha-animada {
-  position: absolute; /* Permite posicionamento livre */
-  width: 50px; 
-  height: 50px;
-  background-image: url('../assets/patinha.png'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  pointer-events: none; /* Ignora cliques do mouse */
-  z-index: 0; /* Garante que fique no fundo */
-
-  /* Aplica a animação */
   animation-name: patinha-caminhando;
-  animation-iteration-count: infinite; /* Repete para sempre */
-  animation-timing-function: linear; /* Movimento constante */
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear; 
+  animation-duration: var(--animation-duration); 
 }
+
 /* --- Responsividade --- */
 @media (max-width: 768px) {
     .home-header h1 {
