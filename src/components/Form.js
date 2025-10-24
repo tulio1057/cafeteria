@@ -1,85 +1,107 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import "../styles/Forms.css";
+import { toast } from "react-toastify";
+import "../styles/Forms.css"; // Estilos de Cafeteria Cozy
+import ImagemTitulo from "../assets/imagem-de-titulo.png"; // Imagem de título
 
-// Recebe 'onSubmitForm' como uma prop
-const Formulario = ({ onSubmitForm }) => {
-  // Inicialização do useForm
+const FormularioSimples = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm();
 
-  // Função que será chamada após a validação do formulário
   const onSubmit = async (data) => {
-    // Chama a função de submissão (handleSubmit) que veio do componente pai (contato.js)
-    // E espera um resultado booleano (true para sucesso, false para falha)
-    const success = await onSubmitForm(data);
+    console.log("Dados Validados (Simulação):", data);
 
-    if (success) {
-      reset(); // Limpa o formulário APENAS se o envio for bem-sucedido
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
+      toast.success(
+        `Obrigado(a), ${data.nome}! Sua mensagem foi enviada (Simulado).`
+      );
+      reset();
+    } catch (error) {
+      toast.error("Ocorreu um erro no processamento do formulário.");
     }
   };
 
   return (
-    // Aplicando a classe 'form-wrapper'
-    <form onSubmit={handleSubmit(onSubmit)} className="form-wrapper">
-      {/* 1. Campo Nome Completo */}
-      <div className="form-group">
-        <input
-          type="text"
-          placeholder="Nome completo"
-          className="form-input"
-          {...register("nome", {
-            required: "Nome é obrigatório",
-          })}
-        />
-        {errors.nome && (
-          <span className="error-message">{errors.nome.message}</span>
-        )}
-      </div>
-
-      {/* 2. Campo Email */}
-      <div className="form-group">
-        <input
-          type="email"
-          placeholder="Email"
-          className="form-input"
-          {...register("email", {
-            required: "Email é obrigatório",
-            pattern: {
-              value: /^\S+@\S+\.\S+$/, // Regex para validação de email
-              message: "Email inválido",
-            },
-          })}
-        />
-        {errors.email && (
-          <span className="error-message">{errors.email.message}</span>
-        )}
-      </div>
-
-      {/* 3. Campo Mensagem */}
-      <div className="form-group">
-        <textarea
-          placeholder="Sua mensagem"
-          className="form-textarea"
-          {...register("mensagem", {
-            required: "Mensagem é obrigatória",
-          })}
-        />
-        {errors.mensagem && (
-          <span className="error-message">{errors.mensagem.message}</span>
-        )}
-      </div>
-
-      {/* Botão de Submissão */}
-      <button type="submit" className="submit-button">
-        Enviar Mensagem
-      </button>
-    </form>
+    <div className="form-page-container">
+      <img
+        src={ImagemTitulo}
+        alt="Entre em Contato"
+        className="form-title-image"
+      />
+           {" "}
+      <form onSubmit={handleSubmit(onSubmit)} className="formulario-simples">
+                {/* CAMPO 1: Nome */}       {" "}
+        <div className="form-group">
+                    <label htmlFor="nome">Nome Completo</label>         {" "}
+          <input
+            id="nome"
+            type="text"
+            placeholder="Seu nome"
+            {...register("nome", {
+              required: "O nome é obrigatório.",
+              minLength: { value: 3, message: "Mínimo de 3 caracteres." },
+            })}
+          />
+                   {" "}
+          {errors.nome && (
+            <span className="error-message">{errors.nome.message}</span>
+          )}
+                 {" "}
+        </div>
+                {/* CAMPO 2: Email */}       {" "}
+        <div className="form-group">
+                    <label htmlFor="email">Email</label>         {" "}
+          <input
+            id="email"
+            type="email"
+            placeholder="seu@email.com"
+            {...register("email", {
+              required: "O email é obrigatório.",
+              pattern: {
+                value: /^\S+@\S+\.\S+$/,
+                message: "Por favor, insira um email válido.",
+              },
+            })}
+          />
+                   {" "}
+          {errors.email && (
+            <span className="error-message">{errors.email.message}</span>
+          )}
+                 {" "}
+        </div>
+        {/* NOVO: CAMPO 3: Mensagem (TEXTAREA) */}       {" "}
+        <div className="form-group">
+                    <label htmlFor="mensagem">Sua Mensagem</label>         {" "}
+          <textarea
+            id="mensagem"
+            placeholder="Escreva sua mensagem aqui..."
+            {...register("mensagem", {
+              required: "A mensagem é obrigatória.",
+              minLength: { value: 10, message: "Mínimo de 10 caracteres." },
+            })}
+          ></textarea>
+                   {" "}
+          {errors.mensagem && (
+            <span className="error-message">{errors.mensagem.message}</span>
+          )}
+                 {" "}
+        </div>
+                {/* BOTÃO DE SUBMISSÃO */}       {" "}
+        <button type="submit" className="submit-button" disabled={isSubmitting}>
+                    {isSubmitting ? "Simulando Envio..." : "Enviar Mensagem"}   
+             {" "}
+        </button>
+             {" "}
+      </form>
+         {" "}
+    </div>
   );
 };
 
-export default Formulario;
+export default FormularioSimples;
