@@ -95,6 +95,7 @@
   .cafe-container {
     flex-direction: column;
     height: auto;
+    width: 62vh;
     margin-top: 40px;
     padding: 20px 0 20px 0;
   }
@@ -137,6 +138,9 @@
 }
 
 @media (max-width: 480px) {
+  .cafe-container {
+    left: 0vh;
+  }
   .cafe-arc {
     width: 160px;
     height: 160px;
