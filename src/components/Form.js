@@ -34,11 +34,11 @@ const FormularioSimples = () => {
         alt="Entre em Contato"
         className="form-title-image"
       />
-           {" "}
+     {" "}
       <form onSubmit={handleSubmit(onSubmit)} className="formulario-simples">
-                {/* CAMPO 1: Nome */}       {" "}
+        {/* CAMPO 1: Nome */} {" "}
         <div className="form-group">
-                    <label htmlFor="nome">Nome Completo</label>         {" "}
+          <label htmlFor="nome">Nome Completo</label> {" "}
           <input
             id="nome"
             type="text"
@@ -48,15 +48,15 @@ const FormularioSimples = () => {
               minLength: { value: 3, message: "Mínimo de 3 caracteres." },
             })}
           />
-                   {" "}
+         {" "}
           {errors.nome && (
             <span className="error-message">{errors.nome.message}</span>
           )}
-                 {" "}
+         {" "}
         </div>
-                {/* CAMPO 2: Email */}       {" "}
+        {/* CAMPO 2: Email */} {" "}
         <div className="form-group">
-                    <label htmlFor="email">Email</label>         {" "}
+          <label htmlFor="email">Email</label> {" "}
           <input
             id="email"
             type="email"
@@ -69,15 +69,15 @@ const FormularioSimples = () => {
               },
             })}
           />
-                   {" "}
+         {" "}
           {errors.email && (
             <span className="error-message">{errors.email.message}</span>
           )}
-                 {" "}
+         {" "}
         </div>
-        {/* NOVO: CAMPO 3: Mensagem (TEXTAREA) */}       {" "}
+        {/* NOVO: CAMPO 3: Mensagem (TEXTAREA) */} {" "}
         <div className="form-group">
-                    <label htmlFor="mensagem">Sua Mensagem</label>         {" "}
+          <label htmlFor="mensagem">Sua Mensagem</label> {" "}
           <textarea
             id="mensagem"
             placeholder="Escreva sua mensagem aqui..."
@@ -86,20 +86,20 @@ const FormularioSimples = () => {
               minLength: { value: 10, message: "Mínimo de 10 caracteres." },
             })}
           ></textarea>
-                   {" "}
+         {" "}
           {errors.mensagem && (
             <span className="error-message">{errors.mensagem.message}</span>
           )}
-                 {" "}
+         {" "}
         </div>
-                {/* BOTÃO DE SUBMISSÃO */}       {" "}
+        {/* BOTÃO DE SUBMISSÃO */} {" "}
         <button type="submit" className="submit-button" disabled={isSubmitting}>
-                    {isSubmitting ? "Simulando Envio..." : "Enviar Mensagem"}   
-             {" "}
+          {isSubmitting ? "Simulando Envio..." : "Enviar Mensagem"} 
+         {" "}
         </button>
-             {" "}
+       {" "}
       </form>
-         {" "}
+     {" "}
     </div>
   );
 };

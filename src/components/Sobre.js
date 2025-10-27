@@ -20,6 +20,8 @@ function Sobre() {
 
       {/* O componente Galeria agora é responsável por carregar e exibir as imagens */}
       <Galeria />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/phUBjjEWsFQ?si=qTHUTmidrBc4Skf7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     </main>
   );
 }
