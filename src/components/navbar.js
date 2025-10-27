@@ -40,7 +40,7 @@ function Navbar() {
         </li>
         <li>
           <Link to="/sobre" onClick={() => setMenuOpen(false)}>
-            Sobre
+            Residentes
           </Link>
         </li>
         <li>

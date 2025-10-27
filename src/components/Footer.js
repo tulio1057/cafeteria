@@ -11,9 +11,10 @@ export default function Footer() {
         </div>
         <nav className="footer-nav">
           <a href="/">Início</a>
-          <a href="/sobre">Sobre</a>
+          <a href="/sobre">Residentes</a>
           <a href="/contato">Contato</a>
           <a href="/menu">Cardápio</a>
+          <a href="/localizacao">Localização</a>
         </nav>
         <div className="footer-contact">
           <p>Email: jejejessicamaria@gmailcom</p>
